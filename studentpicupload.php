@@ -84,7 +84,7 @@ $row = mysqli_fetch_array($result);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Administrator</title>
+    <title>Change Photo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

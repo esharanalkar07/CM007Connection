@@ -65,7 +65,7 @@ $row = mysqli_fetch_array($result);
 
             <li style="margin-top: 20px" class="active"><a href="teacherdashboard.php" style="background-color: deepskyblue;color: white">Home</a></li>
             <li><a href="teacheredit.php">Edit Profile</a></li>
-            <li><a href="assignment_upload.php">Upload Assignments</a></li>
+            <li><a href="teacher_assignupload.php">Upload Assignments</a></li>
             <li><a href="teachviewassignment.php">View  Assignments</a></li>
 
         </ul>

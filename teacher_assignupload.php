@@ -3,16 +3,17 @@ include ('config.php');
 
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
-    header('location: studentlogin.php');
+    header('location: teacherlogin.php');
 }
-$sql = "SELECT firstname, student_id, lastname, course, email, phone, username,img_url FROM student_user WHERE username = '" . $_SESSION['username'] . "'";
+$sql = "SELECT firstname, teacher_id, lastname, department, email, phone, username,img_url FROM teacher_user WHERE username = '" . $_SESSION['username'] . "'";
 $result = mysqli_query($db,$sql);
 $row = mysqli_fetch_array($result);
 
 
 if(isset($_POST['submit']))
 {
-    $student_id=$row['student_id'];
+    $teacher_id=$row['teacher_id'];
+    $department=$row['department'];
     $file = rand(1000,100000)."-".$_FILES['file']['name'];
     $file_loc = $_FILES['file']['tmp_name'];
     $file_size = $_FILES['file']['size'];
@@ -31,13 +32,13 @@ if(isset($_POST['submit']))
 
     if(move_uploaded_file($file_loc,$folder.$final_file))
     {
-        $sql="INSERT INTO assignments(file,student_id) VALUES('$final_file','$student_id')";
+        $sql="INSERT INTO teacher_assignments(file,teacher_id,department) VALUES('$final_file','$teacher_id','$department')";
         if ($db->query($sql) === TRUE) {
             echo '<div data-alert class="alert-box success radius">';
             echo  '<b>Success !</b> Asiignment Uploaded' ;
             echo  '<a href="#" class="close">&times;</a>';
             echo '</div>';
-            header('refresh:1;url=studentdashboard.php');
+            header('refresh:1;url=teacherdashboard.php');
         }
         ?>
 
@@ -48,7 +49,7 @@ if(isset($_POST['submit']))
         ?>
         <script>
             alert('error while uploading file');
-            window.location.href='assignment_upload.php?fail';
+            window.location.href='teacher_assignment_upload.php?fail';
         </script>
         <?php
     }
@@ -88,7 +89,7 @@ if(isset($_POST['submit']))
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header" >
 
-            <p><font size="2"; color="black"> <strong> Student Id : <?php echo $row['student_id']; ?></strong></p>
+            <p><font size="2"; color="black"> <strong> Teacher Id : <?php echo $row['teacher_id']; ?></strong></p>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -106,7 +107,7 @@ if(isset($_POST['submit']))
 
             <img  class='top-image' src='profile_pictures/<?php echo $row['img_url']?>' alt="user photo" title="user photo"height="200px" width="200px">
 
-            <li style="margin-top: 20px" "><a href="studentdashboard.php" >Home</a></li>
+            <li style="margin-top: 20px" "><a href="teacherdashboard.php" >Home</a></li>
             <li><a href="studentedit.php">Edit Profile</a></li>
             <li><a href="assignment_upload.php" style="background-color: deepskyblue;color: white" class="active">My Assignments</a></li>
 
@@ -124,12 +125,12 @@ if(isset($_POST['submit']))
 
                 </div>
                 <div class="form-group">
-                    <form class="form-group" method="POST" action="assignment_upload.php" enctype="multipart/form-data">
+                    <form class="form-group" method="POST" action="teacher_assignupload.php" enctype="multipart/form-data">
 
                         <fieldset style="margin-right: 1000px; >
                             <input type="hidden" name="exid" value='<?php echo $exid;?>'>
-                            <input type="file" name="file" class="form-control-file">
-                            <input type="submit" class="btn" style="background-color: deepskyblue;color: white;float: right;" name="submit" value="Submit">
+                        <input type="file" name="file" class="form-control-file">
+                        <input type="submit" class="btn" style="background-color: deepskyblue;color: white;float: right;" name="submit" value="Submit">
                         </fieldset>
                     </form>
                 </div>

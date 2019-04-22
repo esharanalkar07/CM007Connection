@@ -7,7 +7,7 @@ include ('config.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Administrator</title>
+ <title>Add Student</title>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -68,7 +68,7 @@ include ('config.php');
 				<li><a href="viewstuds.php">View All Students</a></li>
 				<li><a href="viewteach.php">View All Teachers</a></li>
 
-				<li class="active"><a href="adduser.php" style="background-color:deepskyblue;color: white">Add Users</a></li>
+				<li class="active"><a href="addstud.php" style="background-color:deepskyblue;color: white">Add Users</a></li>
 			</ul>
 		</div>
 		<div  class="col-md-10 content">
