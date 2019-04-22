@@ -90,7 +90,7 @@ include ('config.php');
                                     <tr><td>   Birth date  </td><td>       <input class="field1" type="date" name="dob"></td></tr>
                                     <tr><td>   Student Id  </td><td>       <input class="field1" type="text" placeholder="Student Id" name="student_id"></td></tr>
                                     <tr><td>    User Name   </td><td>       <input class="field1" type="text" placeholder="Username" name="username"></td></tr>
-                                    <tr><td>    Password   </td><td>       <input class="field1" type="text" placeholder="Username" name="password"></td></tr>
+                                    <tr><td>    Password   </td><td>       <input class="field1" type="password" placeholder="Username" name="password" autocomplete="off"></td></tr>
                                     <tr><td>   Department  </td><td>
                                             <select class="dropdown" name="department">
                                                 <option value="Default">Choose Option</option>

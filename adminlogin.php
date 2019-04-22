@@ -70,7 +70,7 @@ and a_password='$password'";
                         </div>
                         <div class="form-group">
                             <label for="password" class="text-info">Password:</label><br>
-                            <input type="text" name="a_password" id="password" class="form-control"autocomplete="off>
+                            <input type="password" name="a_password" id="password" class="form-control"autocomplete="off>
                         </div>
                         <div class="form-group">
                             <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>

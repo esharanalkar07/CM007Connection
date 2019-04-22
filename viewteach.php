@@ -71,7 +71,7 @@ $records= mysqli_query($db,$sql);
 
                         echo "<td>".$teacheruser['teacher_id']."</td>";
 
-                        echo "<td><button class='btn btn-sm btn-danger'>Delete <span class='glyphicon glyphicon-trash'></span></button></td>";
+                        echo "<td><a style='border-style: groove' name='del_student' href='deleteteacher.php'>Delete User</a></td>";
 
                         echo "</tr>";
                     } //end while

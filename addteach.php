@@ -89,7 +89,7 @@ include ('config.php');
                         <tr><td>   Birth date  </td><td>       <input class="field1" type="date" name="dob"></td></tr>
                         <tr><td>   Teacher Id  </td><td>       <input class="field1" type="text" placeholder="Teacher Id" name="teacher_id"></td></tr>
                         <tr><td>    User Name   </td><td>       <input class="field1" type="text" placeholder="Username" name="username"></td></tr>
-                        <tr><td>    Password   </td><td>       <input class="field1" type="text" placeholder="Username" name="password"></td></tr>
+                        <tr><td>    Password   </td><td>       <input class="field1" type="password" placeholder="Username" name="password"></td></tr>
                         <tr><td>    Experience   </td><td>       <input class="field1" type="int" placeholder=" Years of Experience" name="experience"></td></tr>
                         <tr><td>   Department  </td><td>
                                 <select class="dropdown" name="department">
