@@ -66,6 +66,7 @@ include ('config.php');
 				<li><a href="studentedit.php">Edit Profile</a></li>
 				<li><a href="assignment_upload.php">Upload Assignments</a></li>
 				<li><a href="viewassignment.php">View My Assignments</a></li>
+                <li><a href="viewnewassignment.php">View New Assignments</a></li>
 				
 			</ul>
 		</div>

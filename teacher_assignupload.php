@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
     $file_loc = $_FILES['file']['tmp_name'];
     $file_size = $_FILES['file']['size'];
     $file_type = $_FILES['file']['type'];
-    $folder="assignments/";
+    $folder="teacher_assignments/";
 
     // new file size in KB
     $new_size = $file_size/1000000;
@@ -32,7 +32,7 @@ if(isset($_POST['submit']))
 
     if(move_uploaded_file($file_loc,$folder.$final_file))
     {
-        $sql="INSERT INTO teacher_assignments(file,teacher_id,department) VALUES('$final_file','$teacher_id','$department')";
+        $sql="INSERT INTO teacher_assignment(file,teacher_id,department) VALUES('$final_file','$teacher_id','$department')";
         if ($db->query($sql) === TRUE) {
             echo '<div data-alert class="alert-box success radius">';
             echo  '<b>Success !</b> Asiignment Uploaded' ;
