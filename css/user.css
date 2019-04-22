@@ -1,0 +1,240 @@
+/* 
+    Document   : newCascadeStyleSheet
+    Created on : Oct 31, 2013, 8:18:45 AM
+    Author     : akshay
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+*{margin:0 auto;
+ } 
+ #mainpane
+ {width:1040px;
+  height:100%;
+  float:left;
+  background-color: #333333;
+  color:white;
+  font-family:Verdana, Geneva, sans-serif;
+  
+ }
+  
+  #rightpane
+  { float:left;
+    line-height:5;
+  
+	  }
+ #leftpane2
+ {
+     width:250px;
+     height:950px;
+     background-color: #4b4b4b;
+     font-family:sans-serif;
+     font-size:16px;
+     float:left;
+     border-width:1px; 
+     border-right-color:gray; 
+     border-right-style:groove; 
+	 padding:10px;
+ }
+ #userphoto
+ {
+     width:200px;
+     height:200px;
+     border-style:groove;
+     background-image:url('sitedata/defaultprofile.png');
+     background-position-x:200px;
+     background-position-y:200px; 
+     margin-top:10px;
+     border-width:1px; 
+ }
+
+ #info
+ {
+     width:250px;
+     height:50px;
+	 text-align:center;
+ }
+ #useroption
+ {   float:left;
+     width:250px;
+     height:300px;
+     
+     
+ }
+ .op
+ {
+     
+     width:250px;
+     height:50px;
+     float:left;
+     text-align:center;
+     background-color: #CC0000;
+     color:white;
+     font-weight:800;
+     font-size:16px;
+     line-height:3; 
+     border-bottom-style:none;
+     border-bottom-color:black;
+     border-bottom-width:thin; 
+	 -moz-box-shadow:0 0 22px #111;
+    -webkit-box-shadow:0 0 22px #111;
+
+	 
+ }
+ .op:hover
+ {
+     width:251px;
+     height:51px;
+     background-color: #FF9900; 
+     
+ }    
+     
+#profileinfo
+{   
+    width:750px;
+    height:750px;
+    margin-top:20px; 
+    float:right;
+    font-size:20px;
+    color:white;
+    line-height:1.5;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+    text-align:left; 
+	padding:5px;
+}
+#profile
+{
+	color: #0099FF;
+	font-family: Tahoma, Geneva, sans-serif;  
+	
+	font-size:36px;
+    font-weight:100;
+	
+}
+#postcount
+{ 
+    width:300px;
+    height:300px;
+    background-color: #E6E6E6;
+    color:black;
+    float:left;
+    font-size:40px; 
+    text-align:center;
+    font-weight:800;
+    line-height: 2;
+    font-family:sans-serif; 
+    margin-right:5px;
+	border-color:#99FFFF;
+	
+}
+#assigmentcount
+{
+    width:300px;
+    height:300px;
+    background-color: #E6E6E6;
+    color:black;
+	border-color:#99FFFF;
+    font-size:40px; 
+    text-align:center;
+    font-weight:800;
+    line-height: 2;
+    font-family:sans-serif;
+    float:right; 
+    
+    
+}
+
+#count
+{  
+   width:700px;
+   height:300px;
+}
+
+#editphoto
+{
+    width: 100%;
+     height:500px;
+    line-height:2; 
+}
+
+#editdetails
+{
+    width:600px;
+    height:800px;
+    font-family:sans-serif;
+    padding:30px;
+    font-weight:800;
+    line-height:2.5;  
+}
+#editpassword
+{
+   width:500px;
+    height:800px;
+    font-family:sans-serif;
+    
+    font-weight:800;
+    line-height:2;    
+}
+
+
+.buttonl
+{
+ width:80px;
+ height:30px;
+ color:white;
+ float:right;
+ background-color: #014DCB;
+ font-family:sans-serif;
+ font-weight:800;
+ border:none;
+}
+.buttonl:hover
+{
+  width:80px;
+  height:30px;
+ background-color:#006; 
+}
+.buttonl-2
+{
+ width:80px;
+ height:30px;
+ color:white;
+ float:right;
+ margin-top:15px;
+ margin-right:15px;
+ background-color: #014DCB;
+ font-family:sans-serif;
+ font-weight:800;
+ border:none;
+}
+.buttonl-2:hover
+{
+  width:80px;
+  height:30px;
+ background-color: #006; 
+}
+
+  .a
+   {
+	   width:auto;
+       height:auto;
+	   float:left;
+	   margin-left:10px;
+  
+	  }  
+	
+	  
+#tag{
+			width:200px;
+			height:100px;
+		    float:right;
+			background-image:url("sitedata/profile.png");
+			}
+			
+li{
+	list-style:none;
+	}			

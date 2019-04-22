@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+ /* 
+    Document   : newCascadeStyleSheet
+    Created on : Oct 31, 2013, 8:18:45 AM
+    Author     : akshay
+    Description:
+        Purpose of the stylesheet follows.
+*/
+  root { 
+    display: block;
+}
+*{margin:0 auto;
+ } 
+  
+ .mainpaneContent
+ {   
+     text-alignment:left;
+	 font-family=san-serif;
+	 padding:5px;
+	 font-weight:bold; 
+	 
+	 }
+  
+ 
+ #leftpane
+ {
+     width:250px;
+     height:900px;
+     background-color: inherit;
+     font-family:sans-serif;
+     font-size:16px;
+     float:left;
+     border-width:1px; 
+     border-right-color:gray; 
+     border-right-style:groove; 
+ }
+.aitem
+{ 
+     width:250px;
+     height:50px;
+     float:left;
+     text-align:center;
+     background-color: #CC0000;
+     color:white;
+     font-weight:800;
+     font-size:16px;
+     line-height:3; 
+     
+     border-bottom-width: thin; 
+	 -moz-box-shadow:0 0 22px #111;
+    -webkit-box-shadow:0 0 22px #111;
+	}
+	.aitem:hover
+	{width:251px;
+     height:51px;
+     background-color: #FF9900; 
+		}
+	#auserphoto
+ {
+     width:200px;
+     height:200px;
+     border-style:groove;
+     background-image:url('sitedata/defaultprofile.png');
+     background-position-x:200px;
+     background-position-y:200px; 
+     margin-top:10px;
+     border-width:1px; 
+ }
+ 
+.postbutton
+{width:100px;
+height:40px;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+background-color:#0066FF;
+font-weight:bold;
+border-width:thin;
+float:right;
+margin-right:40px;
+margin-top:20px;
+
+}
+.postbutton:hover
+{
+	border-style:none;
+}
+.postassignment
+{ width:550px;
+  height:200px;
+  font-family:Arial, Helvetica, sans-serif;
+  float:left;
+  font-size:18px;
+  margin-left:40px;
+  margin-top:40px;
+  text-align:left;
+}
+ 
+.button
+ 
+{
+width:100px;
+height:30px;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+background-color:#0066FF;
+font-weight:bold;
+border-width:thin;
+float:right;
+margin-right:40px;
+
+}
+.button:hover
+{
+	border-style:none;
+}
+
+.buttonlogout
+{
+ width:80px;
+ height:25px;
+ color:white;
+ float:right;
+ margin-right:10px;
+ margin-top: 10px;
+ background-color: #014DCB;
+ font-family:sans-serif;
+ font-weight:800;
+ border:none;
+}
+.buttonllogout:hover
+{
+  width:80px;
+  height:25px;
+ background-color: #a70e0f; 
+}
+table
+{
+	border-collapse:collapse;
+	background-color:#FFFFFF;
+	color:black;
+	font-family:Verdana, Geneva, sans-serif;
+	
+	
+	overflow:scroll;
+	
+	
+}	 
+tr
+{
+	
+background-color:#CCCCCC;
+font-size:12px;
+
+
+
+
+
+
+ 
+	
+}
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+	
+}
+td
+{
+	text-align:center;
+	text-decoration:none;
+     padding:10px;
+	 height:50px;
+	 width:50px;
+	 
+	 
+	 
+}
+
+th
+{background-color:#333333;
+height:70px;
+color:white;
+padding:15px;
+line-height:1;
+	}
+	
+.dropdown
+{
+	
+    
+    width:90px;
+    height:25px;
+    color:black;
+    
+    font-weight:800;
+    border-width:0.5;
+    border-color:black;
+
+}
+.submit
+{ 
+ width:60px;
+ height:25px;
+ 
+ margin-top:5px; 
+ color:white;
+ background-color: #F90;
+ font-weight:800;
+ border:none;
+}
+.submit:hover
+{
+ background-color:#FF6600;
+}
+
+.last_date
+{float:left;
+  width:140px;
+  height:30px;
+   border-style:none;
+}
+.assignment_name
+{float:left;
+  width:140px;
+  height:20px;
+  border-style:groove;
+  border-width:thin;
+  font-family:sans-serif;
+  font-size:18px;
+  padding:5px;
+  
+}
+ .dropdown2
+ {
+	 width:140px;
+    height:25px;
+    color:black;
+    float:left; 
+    font-weight:800;
+    border-width: thin;
+    border-style:groove;
+
+	 }

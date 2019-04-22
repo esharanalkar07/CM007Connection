@@ -1,0 +1,292 @@
+/* 
+    Document   : panel.css
+    Created on : Sep 15, 2013, 7:01:58 AM
+    Author     : akshay
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+*{margin:0 auto;
+ } 
+ #parentpanel
+ {
+     width:auto;
+     height:auto;
+     background-color: #FFF; 
+ }
+ #northpanel
+{ 
+  width:100%;
+  height:120px;
+  background-color:#414141;
+  border-bottom-style: ridge;
+  border-bottom-width:thin;
+  border-bottom-color:orange;
+  font-family:sans-serif;
+  font-style:italic; 
+  color:white;
+  text-align:center;
+  font-weight:800;
+  font-size:48px;
+  line-height:2.5; 
+   
+}
+#westpanel{
+    
+   float:left;
+   width:220px;
+   height:100%;
+   background-color: #FFF;
+   border-right-style: ridge;
+   border-width: thin;
+   border-right-color:black; 
+    
+}
+.nd
+{
+   text-decoration:none;  
+}
+#subwestpanel1
+{
+   margin-top:5px; 
+   float:none;
+   width:100%;
+   height:280px;
+   background-color: beige;
+   border-style:none; 
+   text-decoration:none; 
+    
+}
+.subwestpanel1item
+{   
+    
+    
+    width:100%;
+    height:40px;
+    text-align:center;
+    border-bottom-style: ridge;
+    border-width: thin; 
+    border-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: #660099; 
+    line-height:2.5; 
+    
+}
+.subwestpanel1item:hover{
+    width:100%;
+    height:40px;
+    background-color: #6600FF;
+    font-weight:800;
+    color:white;
+    line-height:3; 
+    border-style:groove;
+	border-width:thin;
+    text-decoration-line:none;
+    
+    cursor:pointer;
+}
+#eastpanel{
+   margin-top:2px; 
+   
+   float:right;
+   width:229px;
+   height:920px;
+   background-color: #e2f8fe;
+   border-style:none;
+      
+}
+.subeastpanel1
+{
+    margin-top:5px; 
+   float:none;
+   width:200px;
+   height:300px;
+   background-color: beige;
+   border-style:none; 
+}
+#centerpanel{
+   
+   float:left;
+   width:920px;
+   height:100%;
+   background-color: #eaecf3;
+   border-style:groove;
+   border-color:black;
+   border-width:0.5px; 
+    
+      
+}
+#subcenterpanel1
+{
+   margin-top:2px;
+   float:none;
+   width:920px;
+   height:400px;
+   background-color:white;
+   border-style:none; 
+   overflow:scroll; 
+   overflow-style: marquee-line;
+   
+   
+}
+.subcenterpanel1content
+{
+   
+   
+   width:920px;
+   height:125px ;
+   background-color: white;
+   border-right-width:thin; 
+  border-bottom-width:thin; 
+   line-height:1;
+   
+   border-color:black; 
+   font-family:sans-serif;
+   line-height:1 ;
+   border-right-style: solid;
+   border-bottom-style: groove;
+   
+   
+}
+#subcenterpanel2
+{
+   margin-top:5px; 
+   float: bottom;
+   width:920px;
+   height:200px;
+   background-color: beige;
+   border-style:none; 
+   
+}
+
+.text_box
+{
+    width:100px;
+    height:25px;
+    border-style:groove;
+    border-color: activeborder;
+    
+}
+
+.text_box:hover
+{
+    width:100px;
+    height:25px;
+    border-color:#a8cfff; 
+    
+}
+
+
+.button1
+{ 
+ width:130px;
+ height:25px;
+ float:right;
+ margin-right:20px; 
+ color:white;
+ background-color: #e51e01;
+ font-weight:800;
+ border:none;
+}
+.button1:hover
+{
+  width:130px;
+  height:25px;
+  background-color: #006;
+}
+
+.button
+{ 
+ width:70px;
+ height:25px;
+ float:right;
+ margin-right:20px; 
+ color:white;
+ background-color: #e51e01;
+ font-weight:800;
+ border:none;
+}
+.button:hover
+{
+  width:70px;
+  height:25px;
+  background-color: #006;
+}
+.highlight
+{
+    width:920px;
+    height:30px;
+    color:white;
+    background-color: black;
+    line-height: 2;
+    font-weight: 800;
+    text-align:center; 
+}
+.dropdown
+{
+    
+    width:90px;
+    height:25px;
+    color:black;
+    background-color: lavender;
+    font-weight:800;
+    border-width:0.5;
+    border-color:black;
+}
+#bottompanel
+{
+    width:100%;
+    height:1466px;
+}   
+
+#adminloginbox
+{background-color:#333333;
+  padding:10px;
+  width:500px;
+ height:400px;
+ border-right:thin;
+ -moz-box-shadow:0 0 22px #111;
+ -webkit-box-shadow:0 0 22px #111;
+  box-shadow:0 0 22px #111;
+  margin-top:100px;
+  line height:2;
+  color:white;
+  font-family:Verdana, Geneva, sans-serif;
+}
+ 
+#adminloginboxcontent
+{width:300px;
+ height:200px;
+ padding:10px;
+ margin-top:100px;
+ 
+	}
+	.admindashboard
+	{
+		width:200px;
+		height:300px;
+		border-style:groove;
+		border-width:thin;
+		padding:5px 5px 5px 5px;
+		}
+		
+	.header
+	 
+	{   width:180px;
+	    height:40px; 
+		background-color: #333;
+		color:white;
+		padding:5px 5px 5px 5px;
+		font-family:Verdana, Geneva, sans-serif;}	
+		
+		.data
+		{padding:5px 5px 5px 5px;
+		 font-family:Verdana, Geneva, sans-serif;}	
+			}
+			
+			

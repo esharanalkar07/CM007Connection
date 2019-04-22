@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+root { 
+    display: block;
+}
+
+
+*{margin:0 auto;
+ } 
+
+*{font-family:sans-serif;
+	}
+	
+#content
+{ background-color: transparent;
+  color:white;
+  padding:10px;
+  width:1020px;
+  height:auto;
+  float:right;
+  
+	}
+body {
+  background: #ddd;
+  margin: 0 auto;
+  background-attachment: fixed;
+  font: normal 14px/1.2 'Helvetica Neue', 'Arial';
+  background-image: url(sitedata/bgforum.jpg);
+ 
+ 
+  
+  
+}
+   textarea
+	{border-style:none;
+	 border-radius:5px;
+	 background-color:#CCCCCC;	
+		}
+	
+	
+	.addtopic
+	{
+	 width:600px;
+	 height:300px;
+	 float:right;
+     border-style:none;
+	 margin-top:160px;
+	 margin-right:160px;
+	 padding:10px;
+	 box-shadow:0 0 30px #111;
+	 background-color:#0099FF;	 
+	 border-radius:10px;
+	 }
+	
+		 
+	 
+	 .addtopicdata
+	 {height:auto;
+	 width:auto;
+      padding:10px;
+	 border-collapse:collapse;
+	 background-color:#0099FF;	 
+	 color:white;
+	 font-weight:bold;
+     border-style:none;
+	
+	 }
+	
+		 
+	 
+.textbox
+{width:400px;
+ height:40px;
+ border-style:none;
+ border-radius:5px;
+ background-color:#CCCCCC;	
+ 
+	}
+	
+	.button
+	{width:90px;
+	height:30px;
+	 background-color: #CC0000 ;
+	 border-style:none;
+	 color:white;
+	 font-weight:bold;
+	 border-collapse:collapse;
+	 
+	 
+		}
+    .button:hover
+	{ background-color: #FF6600;
+		}		
+h1 {
+  border-bottom: 1px solid #333;
+  font-size: 32px;
+  color: #fff;
+  padding-bottom: 12px;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+}
+
+h2 {
+  margin: 10px 0;
+  color: #000;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+h3 {
+  margin: 0;
+  background-color: #333;
+ 
+}
+
+h3 a {
+  background: url("sprite.png") 15px 13px no-repeat;
+  display: block;
+  padding: 10px;
+  padding-left: 32px;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(128, 10, 85, 0.5);
+  border-bottom-color:#666666;
+  text-shadow: 1px 1px 1px rgb(128,10,85);
+}
+h3:hover { background:#999 }
+h3.open  { background-color:#000 }
+h3.open a { background-position: 13px -25px; }
+h3 + div { padding: 10px; }
+
+h2 + div,
+.example {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+/* Pre hide sections with JavaScript on
+--- */
+h3+div {
+  display: none;
+}
+
+/* CSS3 Animation example
+--- */
+#css3-animated-example h3 + div {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background: #000;
+  display: block!important;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#css3-animated-example .content {
+  padding: 10px;
+}
+
+#css3-animated-example h3.open + div {
+  height: auto;
+  background: #CCC  ;
+}
+
+/* Event example
+--- */
+pre#event-log {
+  background: #fafacc;
+  padding: 10px;
+  display: block;
+}
+
+/* Responsive design
+--- */
+@media screen and (max-width: 1056px) {
+  body {
+    width: 672px;
+  }
+  .c2 {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media
+only screen and (max-width: 704px),
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  body {
+    width: 320px;
+  }
+ 
+  h1 {
+    font-size: 28px;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.7);
+	
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  body {
+    padding: 0 12px;
+  }
+}
+
+li a
+{
+    
+	border-color:black;
+	border-size:thin;
+	padding:5px;
+	text-decoration:none;
+    color:#000;
+     font-style:italic;
+	
+}
+li a:hover
+{color: orange;
+	
+	}
+	li
+	{
+		list-style:none;}
+	.container
+	{display:block;
+	width:1040px;
+	height:auto;
+		}	
+	.topbar
+	{width:inherit;
+	  height:80px;
+	  background-color:#000000;
+	  color:white;
+	  font-family:Verdana, Geneva, sans-serif;
+	   
+		
+		}	
+		#logo
+		{float:left;
+		 width:200px;
+		 height:60px;
+		 background-image: url(sitedata/project%20logo.png);
+		 margin-top:10px;
+			}
+			
+	.AddTopicbox
+	{height:100px;
+	 width:150px;
+	  border-style:groove;
+	 -moz-border-style:groove;
+	 -webkit-border-style:groove;
+	  border-width:thin;
+	  float:left;
+	}
+	  .ViewDiscussionboard-btn{
+	  
+	 	background-color: #0000FF:
+		border-style:none;
+		font-family:Verdana, Geneva, sans-serif;
+		font-weight:		
+		color:white;
+		  }
+		 .Disscussionboard
+		 {width:1040px;
+		  height:auto;
+		  padding:15px 15px;;
+		  background-color:white;
+		  color:#FFFFFF;
+		  
+		  
+		   
+	     }
+			td
+			{width:auto;
+			 heigth:auto;
+			 color:black;
+			 background-color: #CCCCCC;
+			 text-align:center;
+			 font-family:Verdana, Geneva, sans-serif;
+			 padding:15px;
+			 }
+			 
+			 #heading
+			 {width:1010px;
+			  height:30px;
+		      padding:15px 15px;
+			  background-color:#333333;
+			  color:white;
+			  text-align:center;
+				 
+				 } 
+				 
+				 tr
+				 {width:1040px;
+				   height:auto;
+				   padding:5px 5px;
+				   
+					 }
+ th
+{background-color:#006600;
+   width:auto;
+   height:auto;
+  padding:5px 5px;
+	}
+hr
+{ border-color:#000000;
+   border-width:thin;
+	}
